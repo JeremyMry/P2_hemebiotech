@@ -39,7 +39,7 @@ public class ReformatSymptomsData implements ISymptomsReformat {
     /**
      * Put the symptoms from the List into a LinkedHashMap
      * The key is the symptom (it will remove the duplicated symptoms) and the value is the occurrence of this symptom
-     * To get occurrences we use the Collections framework withe frequency() method.
+     * To get occurrences we use the Collections framework with the frequency() method.
      * @see ReformatSymptomsData#occurrences
      */
     @Override

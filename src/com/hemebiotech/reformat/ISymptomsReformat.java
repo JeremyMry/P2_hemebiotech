@@ -12,7 +12,6 @@ public interface ISymptomsReformat {
 
     void Sort();
     /**
-     *
      * @return a LinkedHashMap with sorted and classified data by occurrences that will be used to write the symptoms in a file in the WriteSymptomsInFile class
      */
     LinkedHashMap<String, Integer> GetOccurrences();
