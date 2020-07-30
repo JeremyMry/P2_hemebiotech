@@ -8,9 +8,7 @@ import com.hemebiotech.writer.ISymptomsWriter;
 import com.hemebiotech.writer.WriteSymptomsInFile;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.LinkedHashMap;
-import java.util.List;
+import java.util.*;
 
 public class AnalyticsCounterLauncher {
 
@@ -26,7 +24,7 @@ public class AnalyticsCounterLauncher {
              * @see ReformatSymptomsData#GetOccurrences()
              * @see WriteSymptomsInFile#WriteInFile()
              */
-            LinkedHashMap<String, Integer> occurrences = new LinkedHashMap();
+            Map<String, Integer> occurrences = new LinkedHashMap();
 
             ISymptomsReader reader = new ReadSymptomsDataFromFile("files/base_files/symptoms.txt", symptoms);
             reader.GetSymptoms();

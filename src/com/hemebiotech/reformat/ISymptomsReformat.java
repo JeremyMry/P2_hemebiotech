@@ -1,6 +1,6 @@
 package com.hemebiotech.reformat;
 
-import java.util.LinkedHashMap;
+import java.util.Map;
 
 /**
  * Anything that will reformat the structure of the symptoms
@@ -14,5 +14,5 @@ public interface ISymptomsReformat {
     /**
      * @return a LinkedHashMap with sorted and classified data by occurrences that will be used to write the symptoms in a file in the WriteSymptomsInFile class
      */
-    LinkedHashMap<String, Integer> GetOccurrences();
+    Map<String, Integer> GetOccurrences();
 }

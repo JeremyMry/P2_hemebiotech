@@ -15,17 +15,16 @@ public class ReformatSymptomsData implements ISymptomsReformat {
      * @see ReformatSymptomsData#GetOccurrences()
      * @see WriteSymptomsInFile#WriteInFile()
      */
-    private LinkedHashMap<String, Integer> occurrences;
+    private Map<String, Integer> occurrences;
 
     /**
      *
      * @param results a List that contains all the symptoms
      * @param occurrences a LinkedHashMap that contains all the symptoms in the good format
      */
-    public ReformatSymptomsData(List<String> results, LinkedHashMap<String, Integer> occurrences) {
+    public ReformatSymptomsData(List<String> results, Map<String, Integer> occurrences) {
         this.results = results;
-        this.occurrences = occurrences;
-    }
+        this.occurrences = occurrences;    }
 
     /**
      * Sort by alphabetical order the symptoms contain into the List with the Collections framework and the sort() method.
@@ -43,7 +42,7 @@ public class ReformatSymptomsData implements ISymptomsReformat {
      * @see ReformatSymptomsData#occurrences
      */
     @Override
-    public LinkedHashMap<String, Integer> GetOccurrences() {
+    public Map<String, Integer> GetOccurrences() {
         results.forEach((s) -> occurrences.put(s, Collections.frequency(results, s)));
         return occurrences;
     }
