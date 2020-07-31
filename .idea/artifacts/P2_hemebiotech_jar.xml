@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" name="P2_hemebiotech:jar">
-    <output-path>$PROJECT_DIR$/out/artifacts/P2_hemebiotech_jar</output-path>
-    <root id="archive" name="P2_hemebiotech.jar">
-      <element id="module-output" name="P2_hemebiotech" />
-    </root>
-  </artifact>
-</component>
